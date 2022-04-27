@@ -34,8 +34,8 @@ namespace TodoApi.Migrations
                     b.Property<bool>("IsComplete")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<int>("Priorities")
-                        .HasColumnType("int");
+                    b.Property<uint>("Priority")
+                        .HasColumnType("int unsigned");
 
                     b.Property<string>("Task")
                         .HasColumnType("longtext");
